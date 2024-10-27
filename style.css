@@ -1,0 +1,294 @@
+:root {
+    --text-color: #F1EFC8;
+    --background-color: #0F4415;
+    --highlight-color: #C4501B; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/*Nav Bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    height: 80px;
+}
+
+nav .left a {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 20px;
+}
+
+nav .right a:last-child {
+    margin-right: 0;
+    padding: 10px 10px;
+    border: 4px solid var(--text-color);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+nav .right a:last-child:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-color: var(--text-color);
+}
+
+/*Section 1: Introduction*/
+.intro-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 90px 0;
+    margin-bottom: 100px;
+}
+
+.intro-sec h1 {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 100px;
+    color: var(--text-color);
+}
+
+.intro-sec span {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 55px;
+    color: var(--highlight-color);
+}
+
+.intro-sec p {
+    font-size: 23px;
+    color: var(--text-color);
+    margin-bottom: 35px;
+}
+
+.intro-sec a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 10px;
+    border: 4px solid var(--text-color);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.intro-sec a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-color: var(--text-color);
+}
+
+/*Section 2: About Me*/
+.aboutme-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 90px;
+    margin: 90px 0;
+    margin-bottom: 100px;
+}
+
+.aboutme-sec .formalpic {
+    border: 5px solid var(--highlight-color);
+    border-radius: 50%;
+    padding: 30px;
+    margin:0 50px;
+}
+
+.aboutme-sec .formalpic img {
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--highlight-color);
+    opacity: 90%;
+}
+
+.aboutme-sec .text {
+    padding-right: 55px;
+}
+
+.aboutme-sec .text h2 {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--text-color);
+}
+
+.aboutme-sec .text p {
+    font-size: 16px;
+    margin: 25px 0;
+    color: var(--text-color);
+}
+
+/*Section 3: Education*/
+.educ-sec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    margin: 90px 0;
+    margin-bottom: 100px;
+}
+
+.educ-sec h2 {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.educ-sec ul {
+    list-style: none;
+    padding: 0;
+}
+
+.educ-sec li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.educ-sec li img {
+    width: 400px;
+    border: 5px solid var(--highlight-color);
+    margin-right: 20px;
+}
+
+.educ-sec li p {
+    color: var(--text-color);
+    border: 5px solid var(--highlight-color);
+    padding: 20px 50px;
+    flex: 1;
+    text-align: center;
+}
+
+/*Section 4: Skills*/
+.skills-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 90px 0;
+    margin-bottom: 100px;
+}
+
+.skills-sec h2 {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.skills-sec .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 90px;
+}
+
+.skills-sec .grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--highlight-color);
+    background-color: var(--text-color);
+    border-radius: 3px;
+    padding: 10px 50px;
+    flex: 1;
+}
+
+.skills-sec .grid div i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/*Section 5: Contacts*/
+.contact-sec {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    padding: 0 50px;
+    margin: 90px 0;
+    margin-bottom: 50px;
+}
+
+.contact-sec h2 {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--text-color);
+    margin-right: 50px;
+    padding: 0;
+}
+
+.contact-sec .fb {
+    margin-right: 600px;
+
+}
+
+.contact-sec .fb a {
+    color: var(--text-color);
+    font-size: 50px;
+    border: 4px solid var(--text-color);
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.contact-sec .bt {
+    margin-top: 100px; 
+}
+
+.contact-sec .bt a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 10px;
+    border: 4px solid var(--text-color);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.contact-sec a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-color: var(--text-color);
+}
+
+
+
+
